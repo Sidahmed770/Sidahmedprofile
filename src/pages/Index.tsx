@@ -29,7 +29,7 @@ const ProfilePage = () => {
               <AvatarFallback>م</AvatarFallback>
             </Avatar>
             <CardTitle className="text-2xl font-bold text-gray-800">
-              محمد أحمد
+              بلعربي سيدأحمد
             </CardTitle>
             <p className="text-muted-foreground text-center">
               مطور برمجيات | مهندس تقنية معلومات
@@ -40,15 +40,15 @@ const ProfilePage = () => {
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <Mail className="text-blue-500" />
-                <span>mohammed.ahmed@example.com</span>
+                <span>belsidahmed8@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <PhoneCall className="text-green-500" />
-                <span>+٩٦٦ ٥٥ ٥٥٥ ٥٥٥٥</span>
+                <span>+213657981739</span>
               </div>
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <MapPin className="text-red-500" />
-                <span>الرياض، المملكة العربية السعودية</span>
+                <span>Tlemcen,Algerie</span>
               </div>
               <div className="flex items-center space-x-2 rtl:space-x-reverse">
                 <Briefcase className="text-purple-500" />
