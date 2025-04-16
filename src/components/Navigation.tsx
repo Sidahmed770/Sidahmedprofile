@@ -40,7 +40,7 @@ const Navigation = () => {
   return (
     <nav className="bg-white shadow-md p-4 fixed top-0 left-0 right-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl font-bold text-blue-600">PORTFILO</h1>
+        <h1 className="text-xl font-bold text-blue-600">ٍSIDX.Dev</h1>
 
         {isMobile ? (
           <Sheet>
