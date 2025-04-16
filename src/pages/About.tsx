@@ -10,12 +10,12 @@ const About = () => {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white pt-20 p-4">
         <div className="container mx-auto max-w-4xl">
           <Card className="shadow-xl">
-            <CardHeader>
-              <CardTitle className="text-2xl font-bold text-center text-gray-800">نبذة عني</CardTitle>
+            <CardHeader className="py-4 md:py-6">
+              <CardTitle className="text-xl md:text-2xl font-bold text-center text-gray-800">نبذة عني</CardTitle>
             </CardHeader>
-            <CardContent className="prose prose-blue max-w-none">
-              <div className="space-y-4 text-right">
-                <p className="text-lg">
+            <CardContent className="prose prose-blue max-w-none text-sm md:text-base">
+              <div className="space-y-3 md:space-y-4 text-right">
+                <p className="md:text-lg">
 أنا شاب جزائري طموح ومحب للتعلم والتطوير الذاتي، عندي اهتمام كبير بالتكنولوجيا الحديثة، خاصة الذكاء الاصطناعي وتطبيقاته الواقعية. من بين المشاريع اللي نخدم عليها حاليًا، هو تطوير وكيل ذكي (AI Agent) يقدر يولّد مواقع إلكترونية بطريقة ذكية ومباشرة من أوامر المستخدم، بالاعتماد على البحث التلقائي على الصور، الأفكار، والمحتوى الملائم — مشروع يجمع بين الإبداع، الأتمتة، وفهم نية المستخدم.
 
 📈 اهتماماتي الأساسية:
