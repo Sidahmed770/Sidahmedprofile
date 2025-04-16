@@ -20,7 +20,7 @@ const ProfilePage = () => {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center p-4 pt-20">
         <Card className="w-full max-w-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <CardHeader className="flex flex-col items-center space-y-4 pb-0">
-            <img src="/avatar.png" alt="My Avatar" className="w-40 h-40 rounded-full mx-auto" /> 
+            <img src="avatar.png" alt="My Avatar" className="w-40 h-40 rounded-full mx-auto" /> 
                 src="/placeholder.svg" 
                 alt="شخصية التعريف" 
                 className="object-cover"
