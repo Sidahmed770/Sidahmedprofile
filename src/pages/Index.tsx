@@ -68,7 +68,7 @@ const ProfilePage = () => {
                 className="hover:bg-gray-100"
                 asChild
               >
-                <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/belsidahmed" target="_blank" rel="noopener noreferrer">
                   <Github className="h-5 w-5 text-gray-800" />
                 </a>
               </Button>
