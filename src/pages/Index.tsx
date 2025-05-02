@@ -10,7 +10,7 @@ const ProfileCard = () => {
         className="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 shadow-md hover:scale-105 transition"
       />
       <h2 className="text-2xl font-bold mt-4">بالعربي سيدأحمد</h2>
-      <p className="text-gray-500 mt-1">مهندس تقنية معلومات | مطور برمجيات</p>
+      <p className="text-gray-500 mt-1">مهندس تقنية  معلومات | مطور برمجيات</p>
 
       <div className="mt-4 text-right space-y-2">
         <p className="flex items-center gap-2 text-blue-500"><FaEnvelope /> belsidahmed8@gmail.com</p>
