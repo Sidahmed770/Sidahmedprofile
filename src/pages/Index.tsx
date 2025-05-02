@@ -1,83 +1,38 @@
-import React from 'react';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  Mail, 
-  Linkedin, 
-  Github, 
-  PhoneCall, 
-  MapPin, 
-  Briefcase 
-} from "lucide-react";
-import Navigation from "@/components/Navigation";
+// ProfileCard.jsx
+import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt, FaGift, FaLinkedin, FaGithub } from 'react-icons/fa';
 
-const ProfilePage = () => {
+const ProfileCard = () => {
   return (
-    <>
-      <Navigation />
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center p-4 pt-20">
-        <Card className="w-full max-w-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
-          <CardHeader className="flex flex-col items-center space-y-4 pb-0">
-            <img 
-              src="/avatar.png" 
-              alt="شخصية التعريف" 
-              className="w-40 h-40 rounded-full object-cover mx-auto" 
-            />
-            <CardTitle className="text-2xl font-bold text-gray-800">
-              بلعربي سيدأحمد
-            </CardTitle>
-            <p className="text-muted-foreground text-center">
-              مطور برمجيات | مهندس تقنية معلومات
-            </p>
-          </CardHeader>
-          
-          <CardContent className="mt-6 space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <Mail className="text-blue-500" />
-                <span>belsidahmed8@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <PhoneCall className="text-green-500" />
-                <span>+213657981739</span>
-              </div>
-              <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <MapPin className="text-red-500" />
-                <span>Tlemcen, Algerie</span>
-              </div>
-              <div className="flex items-center space-x-2 rtl:space-x-reverse">
-                <Briefcase className="text-purple-500" />
-                <span>مطور برمجيات</span>
-              </div>
-            </div>
+    <div className="max-w-md mx-auto bg-white p-6 rounded-xl shadow-lg text-center mt-10">
+      <img
+        src="/path/to/avatar.jpg"
+        alt="profile"
+        className="w-32 h-32 mx-auto rounded-full border-4 border-blue-500 shadow-md hover:scale-105 transition"
+      />
+      <h2 className="text-2xl font-bold mt-4">بالعربي سيدأحمد</h2>
+      <p className="text-gray-500 mt-1">مهندس تقنية معلومات | مطور برمجيات</p>
 
-            <div className="flex justify-center space-x-4 rtl:space-x-reverse mt-6">
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="hover:bg-blue-100"
-                asChild
-              >
-                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener noreferrer">
-                  <Linkedin className="h-5 w-5 text-blue-600" />
-                </a>
-              </Button>
-              <Button 
-                variant="outline" 
-                size="icon" 
-                className="hover:bg-gray-100"
-                asChild
-              >
-                <a href="https://github.com/Sidahmed770" target="_blank" rel="noopener noreferrer">
-                  <Github className="h-5 w-5 text-gray-800" />
-                </a>
-              </Button>
-            </div>
-          </CardContent>
-        </Card>
+      <div className="mt-4 text-right space-y-2">
+        <p className="flex items-center gap-2 text-blue-500"><FaEnvelope /> belsidahmed8@gmail.com</p>
+        <p className="flex items-center gap-2 text-green-600"><FaPhoneAlt /> +213657981739</p>
+        <p className="flex items-center gap-2 text-red-500"><FaMapMarkerAlt /> Tlemcen, Algerie</p>
+        <p className="flex items-center gap-2 text-purple-600"><FaGift /> مطور برمجيات</p>
       </div>
-    </>
+
+      <div className="flex justify-center gap-4 mt-4">
+        <a href="https://linkedin.com" target="_blank" rel="noopener" className="text-blue-600 hover:scale-110 transition">
+          <FaLinkedin size={24} />
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener" className="text-gray-800 hover:scale-110 transition">
+          <FaGithub size={24} />
+        </a>
+      </div>
+
+      <button className="mt-6 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg transition">
+        تحميل السيرة الذاتية
+      </button>
+    </div>
   );
 };
 
-export default ProfilePage;
+export default ProfileCard;
